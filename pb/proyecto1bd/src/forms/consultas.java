@@ -472,10 +472,25 @@ public class consultas extends javax.swing.JFrame {
         );
 
         jButton1.setText("Ingresar Paciente");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Programar Cita");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Diagnostico");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("CERRAR");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -584,10 +599,12 @@ public class consultas extends javax.swing.JFrame {
     }//GEN-LAST:event_bbuscActionPerformed
 
     private void rtodosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rtodosActionPerformed
+        limpiar();
         block();
     }//GEN-LAST:event_rtodosActionPerformed
 
     private void rdgeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdgeneroActionPerformed
+        limpiar();
         block();
         
         cbogenero.setEnabled(true);
@@ -610,7 +627,7 @@ public class consultas extends javax.swing.JFrame {
 
     private void tdiaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tdiaKeyTyped
         char c = evt.getKeyChar();
-        if ((c<'0'|| c>'3')) evt.consume();
+        if ((c<'0'|| c>'9')) evt.consume();
 
         if(tdia.getText().length()==2){
             evt.consume();
@@ -619,9 +636,9 @@ public class consultas extends javax.swing.JFrame {
 
     private void tdia1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tdia1KeyTyped
         char c = evt.getKeyChar();
-        if ((c<'0'|| c>'3')) evt.consume();
+        if ((c<'0'|| c>'9')) evt.consume();
 
-        if(tdia.getText().length()==2){
+        if(tdia1.getText().length()==2){
             evt.consume();
         }
     }//GEN-LAST:event_tdia1KeyTyped
@@ -630,16 +647,16 @@ public class consultas extends javax.swing.JFrame {
         char c = evt.getKeyChar();
         if ((c<'0'|| c>'9')) evt.consume();
 
-        if(taño.getText().length()==4){
+        if(taño1.getText().length()==4){
             evt.consume();
         }
     }//GEN-LAST:event_taño1KeyTyped
 
     private void tdia2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tdia2KeyTyped
         char c = evt.getKeyChar();
-        if ((c<'0'|| c>'3')) evt.consume();
+        if ((c<'0'|| c>'9')) evt.consume();
 
-        if(tdia.getText().length()==2){
+        if(tdia2.getText().length()==2){
             evt.consume();
         }
     }//GEN-LAST:event_tdia2KeyTyped
@@ -648,25 +665,25 @@ public class consultas extends javax.swing.JFrame {
         char c = evt.getKeyChar();
         if ((c<'0'|| c>'9')) evt.consume();
 
-        if(taño.getText().length()==4){
+        if(taño2.getText().length()==4){
             evt.consume();
         }
     }//GEN-LAST:event_taño2KeyTyped
 
     private void tdia3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tdia3KeyTyped
         char c = evt.getKeyChar();
-        if ((c<'0'|| c>'3')) evt.consume();
+        if ((c<'0'|| c>'9')) evt.consume();
 
-        if(tdia.getText().length()==2){
+        if(tdia3.getText().length()==2){
             evt.consume();
         }
     }//GEN-LAST:event_tdia3KeyTyped
 
     private void tdia4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tdia4KeyTyped
         char c = evt.getKeyChar();
-        if ((c<'0'|| c>'3')) evt.consume();
+        if ((c<'0'|| c>'9')) evt.consume();
 
-        if(tdia.getText().length()==2){
+        if(tdia4.getText().length()==2){
             evt.consume();
         }
     }//GEN-LAST:event_tdia4KeyTyped
@@ -675,7 +692,7 @@ public class consultas extends javax.swing.JFrame {
         char c = evt.getKeyChar();
         if ((c<'0'|| c>'9')) evt.consume();
 
-        if(taño.getText().length()==4){
+        if(taño3.getText().length()==4){
             evt.consume();
         }
     }//GEN-LAST:event_taño3KeyTyped
@@ -684,16 +701,18 @@ public class consultas extends javax.swing.JFrame {
         char c = evt.getKeyChar();
         if ((c<'0'|| c>'9')) evt.consume();
 
-        if(taño.getText().length()==4){
+        if(taño4.getText().length()==4){
             evt.consume();
         }
     }//GEN-LAST:event_taño4KeyTyped
 
     private void rpctActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rpctActionPerformed
+        limpiar();
         block();
     }//GEN-LAST:event_rpctActionPerformed
 
     private void rpct1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rpct1ActionPerformed
+        limpiar();
         block();
     }//GEN-LAST:event_rpct1ActionPerformed
 
@@ -718,12 +737,14 @@ public class consultas extends javax.swing.JFrame {
     }//GEN-LAST:event_rfnacActionPerformed
 
     private void rpacActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rpacActionPerformed
+        limpiar();
         block();
         tpac.setEditable(true);
         tpac.requestFocus();
     }//GEN-LAST:event_rpacActionPerformed
 
     private void rrfcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrfcActionPerformed
+        limpiar();
         block();
         tdia1.setEditable(true);
         tmes1.setEnabled(true);
@@ -737,12 +758,14 @@ public class consultas extends javax.swing.JFrame {
     }//GEN-LAST:event_rrfcActionPerformed
 
     private void rpac1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rpac1ActionPerformed
+        limpiar();
         block();
         tpac1.setEditable(true);
         tpac1.requestFocus();
     }//GEN-LAST:event_rpac1ActionPerformed
 
     private void rrfc1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rrfc1ActionPerformed
+        limpiar();
         block();
         tdia3.setEditable(true);
         tmes3.setEnabled(true);
@@ -764,6 +787,26 @@ public class consultas extends javax.swing.JFrame {
         clases.regp.menupadmin();
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ipacientes p = new ipacientes();
+        p.setVisible(true);
+        dispose();
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        progcita sr = new progcita();
+	sr.setVisible(true);
+        dispose();
+	
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        diagnostico p = new diagnostico();
+        p.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1002,9 +1045,10 @@ void listapcitan(){
         try {
             
             String ConsultaSQL="SELECT paciente.nombre, proximacita.fecha, proximacita.motivo "
-                             + " FROM paciente"
-                             + " INNER JOIN proximacita"
-                             + " ON proximacita.paciente_id="+idpacie;
+                             + " FROM proximacita"
+                             + " INNER JOIN paciente"
+                             + " ON proximacita.paciente_id=paciente.id"
+                             + " where paciente.id="+idpacie;
         
             String []registros= new String[3];
            
@@ -1116,9 +1160,10 @@ void listacitan(){
         try {
             
             String ConsultaSQL="SELECT paciente.nombre, cita.fecha, cita.motivo "
-                             + " FROM paciente"
-                             + " INNER JOIN cita"
-                             + " ON cita.paciente_id="+idpacie;
+                             + " FROM cita"
+                             + " INNER JOIN paciente"
+                             + " ON cita.paciente_id=paciente.id"
+                             + " where paciente.id="+idpacie;
         
             String []registros= new String[3];
            
@@ -1142,8 +1187,8 @@ void listacitan(){
 }
 
 void listacitaf(){
-    String f1=clases.convertirfecha.fechaconv(tdia1.getText(),tmes1.getSelectedItem().toString(),taño1.getText()), 
-           f2=clases.convertirfecha.fechaconv(tdia2.getText(),tmes2.getSelectedItem().toString(),taño2.getText());
+    String f1=clases.convertirfecha.fechaconv(tdia3.getText(),tmes3.getSelectedItem().toString(),taño3.getText()), 
+           f2=clases.convertirfecha.fechaconv(tdia4.getText(),tmes4.getSelectedItem().toString(),taño4.getText());
     
     
     DefaultTableModel modelo= new DefaultTableModel();
@@ -1197,9 +1242,9 @@ private int idpaci(){
             String nomb=tpac.getText();
            
             stmt=con.createStatement();
-            String ConsultaPac="SELECT * FROM paciente WHERE nombre='"+nomb+"'";
+            String ConsultaPac="SELECT id FROM paciente WHERE nombre='"+nomb+"'";
                 
-            idpac=0;
+//            idpac=0;
                 
             ResultSet rs=stmt.executeQuery(ConsultaPac);
                 

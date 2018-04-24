@@ -17,7 +17,7 @@ public class conexion {
     
     static String url="jdbc:mysql://localhost/clinica";
     static String user="root";
-    static String pass="ViendoTele.01";
+    static String pass="68869873";
     
     public static Connection conexion(){
     

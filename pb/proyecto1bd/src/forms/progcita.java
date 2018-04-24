@@ -7,6 +7,7 @@ package forms;
 
 
 import clases.conexion;
+import java.awt.Color;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -31,6 +32,7 @@ public class progcita extends javax.swing.JFrame {
     
     public progcita() {
         initComponents();
+        getContentPane().setBackground(new Color(43,61,83));
         tel.setEditable(false);
         ndpi.setEditable(false);
         block();
@@ -48,7 +50,6 @@ public class progcita extends javax.swing.JFrame {
 
         sexo = new javax.swing.ButtonGroup();
         button1 = new java.awt.Button();
-        jLabel6 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         tel = new java.awt.TextField();
         jLabel1 = new javax.swing.JLabel();
@@ -67,14 +68,15 @@ public class progcita extends javax.swing.JFrame {
         tdia = new java.awt.TextField();
         jLabel5 = new javax.swing.JLabel();
         bnc = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         button1.setLabel("button1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("PROGRAMAR CITA");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setText("jLabel6");
-
+        jPanel1.setBackground(new java.awt.Color(106, 117, 144));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("DATOS PERSONALES"));
         jPanel1.setToolTipText("");
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -106,6 +108,9 @@ public class progcita extends javax.swing.JFrame {
             }
         });
 
+        bbuscar.setBackground(new java.awt.Color(0, 154, 154));
+        bbuscar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        bbuscar.setForeground(new java.awt.Color(255, 255, 255));
         bbuscar.setLabel("Buscar");
         bbuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,8 +140,8 @@ public class progcita extends javax.swing.JFrame {
                             .addComponent(ndpi, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(170, 170, 170)
-                .addComponent(bbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(153, 153, 153)
+                .addComponent(bbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -154,25 +159,35 @@ public class progcita extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addGap(25, 25, 25)
-                .addComponent(bbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addComponent(bbuscar, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE))
         );
 
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 480, -1));
+
+        bcerrar.setBackground(new java.awt.Color(229, 88, 100));
+        bcerrar.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        bcerrar.setForeground(new java.awt.Color(255, 255, 255));
         bcerrar.setText("Cerrar");
         bcerrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bcerrarActionPerformed(evt);
             }
         });
+        getContentPane().add(bcerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 540, 151, 50));
 
+        bacept.setBackground(new java.awt.Color(0, 154, 154));
+        bacept.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        bacept.setForeground(new java.awt.Color(255, 255, 255));
         bacept.setText("Aceptar");
         bacept.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 baceptActionPerformed(evt);
             }
         });
+        getContentPane().add(bacept, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 480, 150, 50));
 
+        jPanel2.setBackground(new java.awt.Color(106, 117, 144));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("PROXIMA CITA"));
 
         label1.setText("Motivo");
@@ -223,7 +238,7 @@ public class progcita extends javax.swing.JFrame {
                         .addComponent(tmes, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(taño, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 54, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(29, 29, 29)
@@ -244,52 +259,24 @@ public class progcita extends javax.swing.JFrame {
                         .addComponent(tmes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(taño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(tdia, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 480, -1));
+
+        bnc.setBackground(new java.awt.Color(0, 154, 154));
+        bnc.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+        bnc.setForeground(new java.awt.Color(255, 255, 255));
         bnc.setLabel("Nueva Cita");
         bnc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bncActionPerformed(evt);
             }
         });
+        getContentPane().add(bnc, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 480, 150, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(57, 57, 57)
-                        .addComponent(bacept)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(bnc)
-                        .addGap(31, 31, 31)
-                        .addComponent(bcerrar))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(bacept)
-                    .addComponent(bcerrar)
-                    .addComponent(bnc))
-                .addGap(11, 11, 11))
-        );
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/icons8_Date_To_90px.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 500, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
@@ -474,8 +461,8 @@ public class progcita extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private java.awt.Label label1;

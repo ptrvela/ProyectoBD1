@@ -82,7 +82,7 @@ public class regusuarios extends javax.swing.JFrame {
             }
         });
 
-        tipus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Normal", "Administrador" }));
+        tipus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Invitado", "Administrador" }));
         tipus.setName("tipous"); // NOI18N
 
         btacept.setText("ACEPTAR");

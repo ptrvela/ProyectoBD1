@@ -143,7 +143,6 @@ public class login extends javax.swing.JFrame {
             }else if(nom.equals(tus.getText()) && pass.equals(clases.codificar.sha1(tpass.getText()))){
                 acceder(nom,pass);
             }
-            
         } catch (NoSuchAlgorithmException ex) {
             Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -216,7 +215,7 @@ public class login extends javax.swing.JFrame {
     public void acceder(String nom, String pass){
         String sql= "select* from usuario where usuario='"+nom+"' && pass='"+pass+"'", cap="";
         principaladmin p = new principaladmin();
-//        principalnormal p2 = new principalnormal();
+        principalinv p2 = new principalinv();
         
         try {
             stmt1=cn.createStatement();
@@ -230,10 +229,10 @@ public class login extends javax.swing.JFrame {
                 p.setVisible(true);
             }
             
-//            if(cap.equals("Normal")){  
-//                p2.setVisible(true);
-//                
-//            }
+            if(cap.equals("Invitado")){  
+                p2.setVisible(true);
+                
+            }
             
             
         } catch (SQLException ex) {

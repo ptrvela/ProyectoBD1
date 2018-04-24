@@ -45,6 +45,7 @@ public class principaladmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("ADMINISTRADOR");
+        setUndecorated(true);
 
         button1.setBackground(new java.awt.Color(0, 154, 154));
         button1.setFont(new java.awt.Font("Segoe UI Light", 0, 30)); // NOI18N

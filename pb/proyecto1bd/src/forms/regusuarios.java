@@ -60,6 +60,7 @@ public class regusuarios extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("REGISTRO DE USUARIOS");
+        setUndecorated(true);
 
         label1.setText("Nombre");
 

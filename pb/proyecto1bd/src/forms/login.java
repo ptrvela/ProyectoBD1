@@ -51,6 +51,7 @@ public class login extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setUndecorated(true);
 
         button1.setBackground(new java.awt.Color(0, 154, 154));
@@ -73,9 +74,8 @@ public class login extends javax.swing.JFrame {
         label2.setForeground(new java.awt.Color(255, 255, 255));
         label2.setText("Contraseña");
 
-        tus.setEditable(false);
         tus.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
-        tus.setForeground(new java.awt.Color(255, 255, 255));
+        tus.setForeground(new java.awt.Color(0, 0, 0));
         tus.setText("textField1");
         tus.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {

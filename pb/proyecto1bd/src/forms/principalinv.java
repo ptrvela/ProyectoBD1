@@ -41,6 +41,7 @@ public class principalinv extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("INVITADO");
+        setUndecorated(true);
 
         button2.setBackground(new java.awt.Color(0, 154, 154));
         button2.setFont(new java.awt.Font("Segoe UI Light", 0, 30)); // NOI18N

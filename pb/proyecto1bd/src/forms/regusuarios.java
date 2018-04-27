@@ -62,12 +62,20 @@ public class regusuarios extends javax.swing.JFrame {
         setTitle("REGISTRO DE USUARIOS");
         setUndecorated(true);
 
+        label1.setBackground(new java.awt.Color(43, 61, 83));
+        label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText("Nombre");
 
+        label2.setBackground(new java.awt.Color(43, 61, 83));
+        label2.setForeground(new java.awt.Color(255, 255, 255));
         label2.setText("Usuario");
 
+        label3.setBackground(new java.awt.Color(43, 61, 83));
+        label3.setForeground(new java.awt.Color(255, 255, 255));
         label3.setText("Tipo de Usuario");
 
+        label4.setBackground(new java.awt.Color(43, 61, 83));
+        label4.setForeground(new java.awt.Color(255, 255, 255));
         label4.setText("Contraseña");
 
         tnom.setName("tnombre"); // NOI18N

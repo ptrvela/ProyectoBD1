@@ -108,9 +108,11 @@ public class consultas extends javax.swing.JFrame {
         });
 
         jPanel1.setBackground(new java.awt.Color(106, 117, 144));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("PACIENTES"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PACIENTES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 13), new java.awt.Color(255, 255, 255))); // NOI18N
 
+        rtodos.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rtodos);
+        rtodos.setForeground(new java.awt.Color(255, 255, 255));
         rtodos.setText("Mostrar Todos");
         rtodos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +120,9 @@ public class consultas extends javax.swing.JFrame {
             }
         });
 
+        rdgenero.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rdgenero);
+        rdgenero.setForeground(new java.awt.Color(255, 255, 255));
         rdgenero.setSelected(true);
         rdgenero.setText("Mostrar Pacientes por Genero:");
         rdgenero.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +133,9 @@ public class consultas extends javax.swing.JFrame {
 
         cbogenero.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccione...", "M", "F" }));
 
+        rfnac.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rfnac);
+        rfnac.setForeground(new java.awt.Color(255, 255, 255));
         rfnac.setText("Fecha de Nacimiento");
         rfnac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,14 +215,17 @@ public class consultas extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tabla);
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Cantidad de Registros");
 
         tcant.setEnabled(false);
 
         jPanel2.setBackground(new java.awt.Color(106, 117, 144));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("CITAS AGENDADAS"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CITAS AGENDADAS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 13), new java.awt.Color(255, 255, 255))); // NOI18N
 
+        rpct.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rpct);
+        rpct.setForeground(new java.awt.Color(255, 255, 255));
         rpct.setText("Mostrar Todas");
         rpct.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,7 +233,9 @@ public class consultas extends javax.swing.JFrame {
             }
         });
 
+        rpac.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rpac);
+        rpac.setForeground(new java.awt.Color(255, 255, 255));
         rpac.setText("Por Paciente");
         rpac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,7 +243,9 @@ public class consultas extends javax.swing.JFrame {
             }
         });
 
+        rrfc.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rrfc);
+        rrfc.setForeground(new java.awt.Color(255, 255, 255));
         rrfc.setText("Rango de Fechas");
         rrfc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -351,9 +364,11 @@ public class consultas extends javax.swing.JFrame {
         );
 
         jPanel3.setBackground(new java.awt.Color(106, 117, 144));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("CITA ATENDIDA"));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CITA ATENDIDA", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 13), new java.awt.Color(255, 255, 255))); // NOI18N
 
+        rpct1.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rpct1);
+        rpct1.setForeground(new java.awt.Color(255, 255, 255));
         rpct1.setText("Mostrar Todas");
         rpct1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -361,7 +376,9 @@ public class consultas extends javax.swing.JFrame {
             }
         });
 
+        rpac1.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rpac1);
+        rpac1.setForeground(new java.awt.Color(255, 255, 255));
         rpac1.setText("Por Paciente");
         rpac1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -369,7 +386,9 @@ public class consultas extends javax.swing.JFrame {
             }
         });
 
+        rrfc1.setBackground(new java.awt.Color(106, 117, 144));
         grupo.add(rrfc1);
+        rrfc1.setForeground(new java.awt.Color(255, 255, 255));
         rrfc1.setText("Rango de Fechas");
         rrfc1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

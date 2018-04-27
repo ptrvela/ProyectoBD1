@@ -79,7 +79,7 @@ public class ipacientes extends javax.swing.JFrame {
         setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(106, 117, 144));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("DATOS PERSONALES"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DATOS PERSONALES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 13), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel1.setToolTipText("");
 
         tel.setText("textField3");
@@ -89,10 +89,13 @@ public class ipacientes extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre");
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("DPI");
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Telefono");
 
         nom.setText("textField1");
@@ -109,10 +112,14 @@ public class ipacientes extends javax.swing.JFrame {
             }
         });
 
+        rf.setBackground(new java.awt.Color(106, 117, 144));
         sexo.add(rf);
+        rf.setForeground(new java.awt.Color(255, 255, 255));
         rf.setText("Femenino");
 
+        rm.setBackground(new java.awt.Color(106, 117, 144));
         sexo.add(rm);
+        rm.setForeground(new java.awt.Color(255, 255, 255));
         rm.setText("Masculino");
 
         tmes.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" }));
@@ -132,8 +139,10 @@ public class ipacientes extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Sexo");
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Fecha de Nacimiento");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -230,12 +239,15 @@ public class ipacientes extends javax.swing.JFrame {
         });
 
         jPanel2.setBackground(new java.awt.Color(106, 117, 144));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("DIRECCION"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DIRECCION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 13), new java.awt.Color(255, 255, 255))); // NOI18N
 
+        label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText("Municipio");
 
+        label2.setForeground(new java.awt.Color(255, 255, 255));
         label2.setText("Departamento");
 
+        label3.setForeground(new java.awt.Color(255, 255, 255));
         label3.setText("Direccion");
 
         tmunicipio.setText("textField1");

@@ -78,7 +78,8 @@ public class progcita extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(106, 117, 144));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("DATOS PERSONALES"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DATOS PERSONALES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 13), new java.awt.Color(255, 255, 255))); // NOI18N
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setToolTipText("");
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
@@ -89,10 +90,13 @@ public class progcita extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre");
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("DPI");
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Telefono");
 
         nom.setText("textField1");
@@ -189,8 +193,9 @@ public class progcita extends javax.swing.JFrame {
         getContentPane().add(bacept, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 480, 150, 50));
 
         jPanel2.setBackground(new java.awt.Color(106, 117, 144));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("PROXIMA CITA"));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "PROXIMA CITA", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 13), new java.awt.Color(255, 255, 255))); // NOI18N
 
+        label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText("Motivo");
 
         tmotivo.setText("textField1");
@@ -222,6 +227,7 @@ public class progcita extends javax.swing.JFrame {
             }
         });
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Fecha programada");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
